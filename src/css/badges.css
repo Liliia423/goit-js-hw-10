@@ -1,4 +1,4 @@
-.badges-list {
+/*.badges-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -16,4 +16,4 @@
 .badges-link:focus {
   transform: scale(1.06);
   color: #747bff;
-}
+}*/

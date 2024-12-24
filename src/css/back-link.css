@@ -1,4 +1,4 @@
-.back-link {
+/*.back-link {
   position: relative;
   display: inline-block;
   padding: 4px 8px;
@@ -26,4 +26,4 @@
 .back-link:hover::before {
   opacity: 1;
   animation-play-state: running;
-}
+}*/
