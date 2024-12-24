@@ -16,3 +16,34 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');*/
+
+#datetime-picker {
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-right: 8 px;
+  padding: 0;
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #808080;
+}
