@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+flatpickr('#datetime-picker', {});
 
 const options = {
   enableTime: true,
@@ -10,6 +11,7 @@ const options = {
     console.log(selectedDates[0]);
   },
 };
+let userSelectedDate = 0;
 
 const startButton = document.querySelector('button');
 startButton.classList.add('startBtn');
