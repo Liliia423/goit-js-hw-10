@@ -10,3 +10,11 @@ const options = {
     console.log(selectedDates[0]);
   },
 };
+
+const startButton = document.querySelector('button');
+startButton.classList.add('startBtn');
+
+const labelNames = document.querySelectorAll('.label');
+labelNames.forEach(label => {
+  label.textContent = label.textContent.toUpperCase();
+});
