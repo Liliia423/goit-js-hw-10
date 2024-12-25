@@ -18,7 +18,7 @@
 @import url('./footer.css');*/
 
 #datetime-picker {
-  margin-top: 32px;
+  margin-top: 24px;
   box-sizing: border-box;
   width: 272px;
   height: 40px;
@@ -38,15 +38,18 @@
 }
 
 #datetime-picker:hover {
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 #datetime-picker:active {
-  border: 1px solid #000000;
+  border: 1px solid #4e75ff;
+  color: #000000;
 }
 
 #datetime-picker:disabled {
   border: 1px solid #808080;
+  color: #808080;
+  background-color: #fafafa;
 }
 
 .startBtn {
@@ -66,6 +69,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  margin-left: 5px;
 }
 
 .startBtn:hover {
@@ -106,4 +110,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+}
+
+input {
+  padding-block: 0;
+  padding-inline: 0;
 }
