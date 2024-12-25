@@ -18,6 +18,7 @@
 @import url('./footer.css');*/
 
 #datetime-picker {
+  box-sizing: border-box;
   margin-top: 24px;
   width: 280px;
   height: 40px;
@@ -118,7 +119,7 @@ input {
 /* стилізація календаря */
 .flatpickr-calendar {
   width: 280px !important;
-  background-color: #f2f2f0 !important;
+  background-color: #edeef0 !important;
 }
 .flatpickr-current-month {
   color: #3b62ee !important;
@@ -177,3 +178,11 @@ input {
   border-bottom: 2px solid #ffbebe;
   background: #ef4040;
 }*/
+
+/*.flatpickr-time {
+ border-top: #212121 !important;
+}*/
+.flatpickr-time input {
+  color: #0c0ca8 !important;
+  font-weight: 500 !important;
+}
