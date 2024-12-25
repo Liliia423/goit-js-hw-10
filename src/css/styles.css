@@ -19,8 +19,7 @@
 
 #datetime-picker {
   margin-top: 24px;
-  box-sizing: border-box;
-  width: 272px;
+  width: 280px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -40,7 +39,7 @@
 #datetime-picker:hover {
   border: 1px solid #000000;
 }
-
+/*бордюр не синішає!*/
 #datetime-picker:active {
   border: 1px solid #4e75ff;
   color: #000000;
@@ -116,3 +115,65 @@ input {
   padding-block: 0;
   padding-inline: 0;
 }
+/* стилізація календаря */
+.flatpickr-calendar {
+  width: 280px !important;
+  background-color: #f2f2f0 !important;
+}
+.flatpickr-current-month {
+  color: #3b62ee !important;
+}
+
+.flatpickr-weekday {
+  color: #0c0ca8 !important;
+  font-weight: 500 !important;
+}
+.flatpickr-rContainer {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+.dayContainer {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+
+.flatpickr-days {
+  width: 280px !important;
+}
+
+.flatpickr-day.today {
+  color: #3b62ee;
+  font-weight: 500;
+  background-color: #f8f8f8;
+}
+
+/* стилізація сповіщення про помилку */
+/*.error-toast {
+  width: 302px;
+  height: 64px;
+  display: inline-flex;
+  padding: 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border-bottom: 2px solid #ffbebe;
+  background: #ef4040;
+}
+.animate {
+  color: #b51b1b;
+}*/
+
+/*iziToast-wrapper iziToast-wrapper-topRight*/
+/*.iziToast-capsule {
+  width: 302px;
+  height: 64px;
+  display: inline-flex;
+  padding: 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border-bottom: 2px solid #ffbebe;
+  background: #ef4040;
+}*/
