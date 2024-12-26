@@ -63,8 +63,11 @@ const options = {
     const selectedDate = selectedDates[0];
     if (selectedDate <= new Date()) {
       iziToast.error({
-        message: 'Please choose a date in the future',
+        message: 'Error Illegal operation',
         position: 'topRight',
+        class: 'error-toast',
+        timeout: 600000,
+        closeOnClick: true,
         class: 'error-toast',
       });
       startButton.disabled = true;
@@ -88,22 +91,23 @@ startButton.addEventListener('click', () => {
 
     if (deltaTime <= 0) {
       clearInterval(intervalId); // зупинка таймер
-      /*iziToast.success({
-        message: 'Time is up!',
-        position: 'topRight',
-      });*/
 
-      // кнопка активація
+      // активація кнопки після відліку
       document.querySelector('#datetime-picker').disabled = false;
     } else {
-      // таймера
       const timeComponents = convertMs(deltaTime);
-
       updateTimer(timeComponents);
     }
   }, 1000);
 });
+
 /* щоб перевірити css налаштування стану disabled
 document.querySelector('#datetime-picker').setAttribute('disabled', 'true');
 document.querySelector('#datetime-picker').removeAttribute('disabled');
 */
+
+/*iziToast.error({
+  message: 'Please choose a date in the future',
+  position: 'topRight',
+  timeout: false, // Не зникає автоматично
+});*/

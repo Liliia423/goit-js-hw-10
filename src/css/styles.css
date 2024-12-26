@@ -17,6 +17,7 @@
 @import url('./back-link.css');
 @import url('./footer.css');*/
 
+/* ======== стилізація поля із датою і часом ======== */
 #datetime-picker {
   box-sizing: border-box;
   margin-top: 24px;
@@ -40,11 +41,11 @@
 #datetime-picker:hover {
   border: 1px solid #000000;
 }
-/*бордюр не синішає!*/
+/*бордюр не синішає!
 #datetime-picker:active {
   border: 1px solid #4e75ff;
   color: #000000;
-}
+}*/
 
 #datetime-picker:disabled {
   border: 1px solid #808080;
@@ -52,6 +53,7 @@
   background-color: #fafafa;
 }
 
+/* ======== стилізація кнопки Start ======== */
 .startBtn {
   display: inline-flex;
   padding: 8px 16px;
@@ -80,6 +82,8 @@
   background: #cfcfcf;
   color: #989898;
 }
+
+/* ======== стилізація таймера ======== */
 .timer {
   margin-top: 32px;
   display: flex;
@@ -116,11 +120,13 @@ input {
   padding-block: 0;
   padding-inline: 0;
 }
-/* стилізація календаря */
+
+/* ======== стилізація календаря ======== */
 .flatpickr-calendar {
   width: 280px !important;
   background-color: #edeef0 !important;
 }
+
 .flatpickr-current-month {
   color: #3b62ee !important;
 }
@@ -129,11 +135,13 @@ input {
   color: #0c0ca8 !important;
   font-weight: 500 !important;
 }
+
 .flatpickr-rContainer {
   width: 280px !important;
   min-width: 280px !important;
   max-width: 280px !important;
 }
+
 .dayContainer {
   width: 280px !important;
   min-width: 280px !important;
@@ -150,6 +158,10 @@ input {
   background-color: #f8f8f8;
 }
 
+.flatpickr-time input {
+  color: #0c0ca8 !important;
+  font-weight: 500 !important;
+}
 /* стилізація сповіщення про помилку */
 /*.error-toast {
   width: 302px;
@@ -179,10 +191,50 @@ input {
   background: #ef4040;
 }*/
 
-/*.flatpickr-time {
- border-top: #212121 !important;
-}*/
-.flatpickr-time input {
-  color: #0c0ca8 !important;
-  font-weight: 500 !important;
+/* ==== стилізація повідомлення про помилку при виборі дати-часу ==== */
+
+.error-toast {
+  background-color: #ef4040 !important;
+  border-radius: 4px !important;
+  border-bottom: 2px solid #ffbebe !important;
+  color: #ffffff !important; /* текст */
+  display: inline-flex;
+  padding: 20px !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* текст повідомлення про помилку */
+.error-toast .iziToast-message {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: Montserrat !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* заголовок повідомлення про помилку */
+.error-toast .iziToast-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+/* іконка закриття вікна про помилку */
+
+.iziToast-close {
+  background: url('./src/img/bi_x-lg.svg') !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.iziToast-icon {
+  background: url('./src/img/bi_x-octagon.svg') !important;
+  border: none !important;
 }
