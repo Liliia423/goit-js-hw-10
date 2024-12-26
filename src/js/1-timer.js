@@ -63,7 +63,12 @@ const options = {
     const selectedDate = selectedDates[0];
     if (selectedDate <= new Date()) {
       iziToast.error({
-        message: 'Error Illegal operation',
+        message:
+          '<div class="error-toast">' +
+          /*'<span class="icon"></span>' +*/
+          '<span class="title">Error</span>' +
+          '<span class="message">Illegal operation</span>' +
+          '</div>',
         position: 'topRight',
         class: 'error-toast',
         timeout: 600000,
