@@ -65,13 +65,12 @@ const options = {
       iziToast.error({
         message:
           '<div class="error-toast">' +
-          /*'<span class="icon"></span>' +*/
           '<span class="title">Error</span>' +
           '<span class="message">Illegal operation</span>' +
           '</div>',
         position: 'topRight',
         class: 'error-toast',
-        timeout: 600000,
+        /*timeout: 2000,*/
         closeOnClick: true,
         class: 'error-toast',
       });

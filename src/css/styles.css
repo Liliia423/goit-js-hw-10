@@ -41,11 +41,11 @@
 #datetime-picker:hover {
   border: 1px solid #000000;
 }
-/*бордюр не синішає!
+/*бордюр не синішає!*/
 #datetime-picker:active {
-  border: 1px solid #4e75ff;
+  border: 1px solid #4e75ff !important;
   color: #000000;
-}*/
+}
 
 #datetime-picker:disabled {
   border: 1px solid #808080;
@@ -192,6 +192,7 @@ input {
 }*/
 
 /* ==== стилізація повідомлення про помилку при виборі дати-часу ==== */
+
 .iziToast {
   display: inline-flex !important;
   align-items: center !important;
@@ -201,15 +202,15 @@ input {
 }
 
 .iziToast.iziToast-color-red {
-  border-color: #ef4040 !important;
+  /*border-color: #ef4040 !important;*/
   background: #ef4040 !important;
+  border-radius: 4px !important;
 }
 
 .iziToast-body {
   box-sizing: border-box;
   min-height: 1px !important;
-  max-height: 64px !important;
-  padding: 20px 60px 18px 52px !important;
+  padding: 20px 62px 20px 52px !important;
   margin: 0 !important;
   border-radius: 4px !important;
 }
@@ -236,60 +237,29 @@ input {
   gap: 8px !important;
 }
 
+/* стилізація слова Error */
+:root {
+  font-synthesis: weight;
+}
 .iziToast-message.slideIn .error-toast .title {
   font-weight: 700 !important;
 }
 
-/*.error-toast .message {
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-}*/
-
-/*.error-toast .icon {
-  width: 24px;
-  height: 24px;
-  background: url('./src/img/bi_x-octagon.svg') no-repeat center center !important;
-  background-size: contain !important;
-}*/
-
-/* заголовок повідомлення про помилку */
-.error-toast .iziToast-title {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.5px;
+/* додавання іконок */
+.iziToast-icon {
+  background: url('../img/bi_x-octagon.svg') no-repeat 50% 50% !important;
+  margin-left: 20px !important;
 }
-
-/* іконка закриття вікна про помилку */
-
-/*.iziToast-close {
-  background: url('./src/img/bi_x-lg.svg') !important;
+.iziToast-close {
+  background: url('../img/bi_x-lg.svg') no-repeat 50% 50% !important;
   border: none !important;
   cursor: pointer !important;
-}*/
-
-/*.iziToast-icon {
-  background: url('./src/img/bi_x-octagon.svg') !important;
-  border: none !important;
-}*/
-
-/*.iziToast-icon,
-span.icon {
-  background: url('./src/img/bi_x-octagon.svg') no-repeat center center !important;
-  background-size: contain !important;
-  width: 24px !important;
-  height: 24px !important;
-}*/
+  opacity: 1 !important;
+  /*background-size: 30% !important;*/
+}
 
 /* ==== стилізація прогрес-бару ==== */
 .iziToast-progressbar {
   background: #ffbebe !important;
+  border-radius: 0 0 4px 4px !important;
 }
