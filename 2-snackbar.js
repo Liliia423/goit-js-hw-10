@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */import"./assets/vendor-BbbuE1sJ.js";flatpickr("#datetime-picker",options);
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */import"./assets/vendor-BbbuE1sJ.js";const t=document.querySelector('input[name="delay"]');t.classList.add("inputDelayField");const e=document.querySelector("fieldset");e.classList.add(".stateField");const o=document.querySelector('.form button[type="submit"]');o.classList.add("createBtn");
 //# sourceMappingURL=2-snackbar.js.map
