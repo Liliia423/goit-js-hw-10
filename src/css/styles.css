@@ -42,8 +42,8 @@
 }
 
 #datetime-picker:focus-visible {
-  outline: none !important; /* Видаляє стандартний контур */
-  /* border: none !important; Видаляє бордюр */
+  border: 1px solid #4e75ff !important;
+  outline: none !important; /* видаляємо стандартний контур */
 }
 
 #datetime-picker:active {
