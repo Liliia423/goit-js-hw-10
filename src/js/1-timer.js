@@ -13,14 +13,6 @@ labelNames.forEach(label => {
   label.textContent = label.textContent.toUpperCase();
 });
 
-/* ==== стилізація інпуту для стану active - start ====*/
-const dateTimePicker = document.querySelector('#datetime-picker');
-
-dateTimePicker.addEventListener('focus', () => {
-  dateTimePicker.classList.add('active');
-});
-/* ==== стилізація інпуту для стану active - end ====*/
-
 function updateTimer({ days, hours, minutes, seconds }) {
   document.querySelector('[data-days]').textContent = addLeadingZero(days);
   document.querySelector('[data-hours]').textContent = addLeadingZero(hours);
