@@ -41,14 +41,16 @@
   border: 1px solid #000000;
 }
 
+#datetime-picker:focus-visible {
+  outline: none !important; /* Видаляє стандартний контур */
+  /* border: none !important; Видаляє бордюр */
+}
+
 #datetime-picker:active {
   border-color: #4e75ff !important;
   color: #000000;
 }
 
-#datetime-picker:focus-visible {
-  border-color: none !important;
-}
 #datetime-picker:disabled {
   border: 1px solid #808080;
   color: #808080;
