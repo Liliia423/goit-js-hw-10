@@ -239,3 +239,14 @@ input {
   background: #ffbebe !important;
   border-radius: 0 0 4px 4px !important;
 }
+
+/* ==== завдання № 2 ==== */
+.form {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
