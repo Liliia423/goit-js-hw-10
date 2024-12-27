@@ -1,1 +1,1 @@
-{"version":3,"file":"2-snackbar.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"2-snackbar.js","sources":["../src/js/2-snackbar.js"],"sourcesContent":["import iziToast from 'izitoast';\nimport 'izitoast/dist/css/iziToast.min.css';\n\n// Ініціалізація flatpickr із параметрами\nflatpickr('#datetime-picker', options);\n"],"names":[],"mappings":"4HAIA,UAAU,mBAAoB,OAAO"}
