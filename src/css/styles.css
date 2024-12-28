@@ -235,7 +235,7 @@ input {
 }
 
 /* ==== стилізація прогрес-бару ==== */
-.iziToast-progressbar {
+.error-toast .iziToast-progressbar {
   background: #ffbebe !important;
   border-radius: 0 0 4px 4px !important;
 }
@@ -324,7 +324,7 @@ fieldset label {
 }
 
 /* ======== стилізація кнопки Create Notification ======== */
-.createBtn {
+.notificationButton {
   width: 360px;
   display: inline-flex;
   padding: 8px 16px;
@@ -343,6 +343,35 @@ fieldset label {
   letter-spacing: 0.64px;
 }
 
-.createBtn:hover {
+.notificationButton:hover {
   background: #6c8cff;
+}
+
+/* ==== стилізація повідомлення про успіх ==== */
+/* стилізація слова Ok */
+:root {
+  font-synthesis: weight;
+}
+.iziToast-message.slideIn .success-toast .title {
+  font-weight: 700 !important;
+}
+
+.success-toast {
+  display: inline-flex;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.iziToast.iziToast-color-green {
+  background: #59a10d !important;
+  border-color: #59a10d !important;
+  /*border-bottom: 2px solid #b5ea7c !important;*/
+}
+
+.iziToast-icon.ico-success {
+  background: url('../img/bi_check2-circle.svg') no-repeat 50% 50% !important;
+  margin-left: 20px !important;
+}
+/* ==== стилізація прогрес-бару ==== */
+.success-toast .iziToast-progressbar {
+  background: #b5ea7c !important;
 }

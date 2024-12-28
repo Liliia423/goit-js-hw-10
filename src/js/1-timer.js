@@ -71,7 +71,6 @@ const options = {
         class: 'error-toast',
         /*timeout: 2000,*/
         closeOnClick: true,
-        class: 'error-toast',
       });
       startButton.disabled = true;
     } else {
