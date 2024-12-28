@@ -241,6 +241,7 @@ input {
 }
 
 /* ==== завдання № 2 ==== */
+
 .form {
   color: #2e2f42;
   font-family: Montserrat;
@@ -252,6 +253,8 @@ input {
   margin-top: 36px;
 }
 
+/* ==== блок Delay ==== */
+
 .inputDelayField {
   box-sizing: border-box;
   display: flex;
@@ -260,35 +263,46 @@ input {
   border-radius: 4px;
   margin-top: 8px;
   margin-bottom: 30px;
-  border-width: 1px; /* 2 DZ */
-  padding: 0; /* 2 DZ */
-}
-
-input.inputDelayField[name='delay'] {
-  border-color: #808080 !important;
+  border: 1px solid #808080 !important;
 }
 
 input.inputDelayField[name='delay']:hover {
   border-color: #000000 !important;
 }
+input.inputDelayField[name='delay']:focus-visible {
+  border: 1px solid #4e75ff !important;
+  outline: none !important; /* видаляємо стандартний контур */
+}
+input.inputDelayField[name='delay']:active {
+  border: 1px solid #4e75ff !important;
+}
+
+input.inputDelayField[name='delay'] {
+  padding-left: 16px;
+}
+
+/* ==== блок State ==== */
 
 fieldset {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 48px;
   width: 360px;
   height: 76px;
   border-radius: 4px;
-  flex-shrink: 0;
-
-  stroke-width: 1px;
-  stroke: #808080;
+  border: 1px solid #808080 !important;
   margin-top: 0;
   margin-inline: 0;
   padding-inline: 1.75em; /*відступ справа State*/
-  margin-bottom: 24px; /*відступ до кноаки*/
+  margin-bottom: 24px; /*відступ до кнопки*/
+  padding-block: 0.7em 0;
 }
 
+fieldset:hover,
+fieldset:active {
+  border: 1px solid #000000 !important;
+}
 /* ======== стилізація кнопки Create Notification ======== */
 .createBtn {
   width: 360px;
@@ -296,16 +310,19 @@ fieldset {
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  /*gap: 10px;*/
   border-radius: 8px;
   background: #4e75ff;
   border: none;
 
-  color: #fff;
+  color: #ffffff;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+}
+
+.createBtn:hover {
+  background: #6c8cff;
 }
