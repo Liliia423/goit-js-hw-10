@@ -5,22 +5,24 @@ const inputDelay = document.querySelector('input[name="delay"]');
 inputDelay.classList.add('inputDelayField');
 
 const stateSelectionField = document.querySelector('fieldset');
-stateSelectionField.classList.add('.stateField');
+stateSelectionField.classList.add('stateField');
 
 const notificationButton = document.querySelector(
   '.form button[type="submit"]'
 );
 notificationButton.classList.add('notificationButton');
 
+const form = document.querySelector('.form');
+
 const selectedState = document.querySelector('input[name="state"]:checked');
 const isSuccess = selectedState && selectedState.value === 'fulfilled';
 
-notificationButton.addEventListener('click', event => {
+form.addEventListener('submit', event => {
   event.preventDefault();
 
   const delay = Number(inputDelay.value); // значення затримки
-  const selectedState = document.querySelector('input[name="state"]:checked');
 
+  const selectedState = document.querySelector('input[name="state"]:checked');
   const isSuccess = selectedState && selectedState.value === 'fulfilled';
 
   const promise = new Promise((resolve, reject) => {
@@ -33,7 +35,6 @@ notificationButton.addEventListener('click', event => {
     }, delay);
   });
 
-  // колбеки
   promise
     .then(value => {
       iziToast.success({
